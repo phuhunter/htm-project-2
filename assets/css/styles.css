@@ -1,0 +1,218 @@
+:root {
+    --primary-btn-color: #171100;
+    --second-btn-color: #ffb900;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: Poppins;
+}
+a {
+    text-decoration: none;
+}
+/* -----------COMMON CSSS------------ */
+.btn {
+    background-color: var(--primary-btn-color);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+}
+.content {
+    width: min(1170px, calc(100vw - 48px));
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.text {
+    color: #5f5b53;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* -----------HEADER----------- */
+.header {
+    background-color: #fffcf4;
+    /* padding-top: 36px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+.nav-bar {
+    height: 94px;
+    flex-shrink: 0;
+}
+.header .nav-bar,
+.header .nav-bar ul {
+    display: flex;
+    align-items: center;
+}
+.header .nav-bar ul {
+    margin-left: auto;
+    /* gap: 0 42px; */
+}
+.header .nav-bar ul li a {
+    color: #5f5b53;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.75;
+    padding: 5px 21px;
+    /* background-color: red; */
+}
+.header .nav-bar li.active a {
+    color: #171100;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+    position: relative;
+}
+.header .nav-bar li.active a::after {
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    display: inline-block;
+    position: absolute;
+    left: 21px;
+    bottom: -1px;
+}
+.header .nav-bar a:hover {
+    text-shadow: 0.3px 0 currentColor;
+}
+.header .action {
+    padding: 11px 4px;
+    border-radius: 24.5px;
+    width: 144px;
+    height: 50px;
+    margin-left: 70px;
+}
+.header .hero {
+    background: #fffcf4;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-bottom: 65px;
+}
+.hero .img-block {
+    width: 40%;
+    position: relative;
+
+    /* background-color: red; */
+}
+.hero .img-block .feature-img {
+    display: block;
+    max-height: calc(100vh - 94px);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.hero .img-block .stats {
+    position: absolute;
+    width: 270px;
+    height: 244px;
+    background-color: #fff;
+    bottom: 113px;
+    right: -100px;
+    border-radius: 12px;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+.hero .stats-item {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+    margin-bottom: 14px;
+}
+.hero .stats-item .stats-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .stats-info .text {
+    color: #5f5b53;
+    font-size: 14px;
+    line-height: 26px;
+}
+.hero .stats-info .name {
+    color: #171100;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+}
+.hero .info {
+    width: 40%;
+    /* max-height: calc(100vh - 94px); */
+    padding-top: 64px;
+}
+
+.hero .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 68px; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.hero .desc {
+    margin-top: 22px;
+    margin-bottom: 38px;
+}
+.hero .row {
+    margin-bottom: 48px;
+}
+.hero .row .course {
+    background-color: var(--second-btn-color);
+    border-radius: 32px;
+    width: 180px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .row .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .row strong {
+    color: #171100;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-left: 14px;
+}
+p.engage {
+    margin-bottom: 8px;
+}
+.hero .row2 .number {
+    color: #171100;
+    font-family: Sen;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px; /* 122.727% */
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.hero .row2 .number:first-child {
+    margin-left: 0px;
+}
