@@ -217,6 +217,9 @@ p.engage {
     margin-left: 0px;
 }
 /* -------------POPULAR COURSES------------------ */
+.popular {
+    padding-top: 200px;
+}
 .popular .content {
     position: relative;
 }
