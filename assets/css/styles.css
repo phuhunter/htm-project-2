@@ -471,3 +471,122 @@ p.engage {
     object-fit: cover;
     border-radius: 16px;
 }
+/* --------------------BLOG-------------------- */
+.blog {
+    padding: 96px 0px 140px;
+    background: #fffcf4;
+}
+.blog-header {
+    text-align: center;
+}
+.blog-heading {
+    color: #130606;
+    font-family: Sen;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+.blog-desc {
+    color: #696262;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 28px; /* 175% */
+    width: 448px;
+    margin: 16px auto 0;
+}
+.blog-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+.blog-card {
+    flex: 1;
+    min-width: 0;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.blog-card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.blog-card-body {
+    padding: 20px 20px 28px;
+    background-color: #fff;
+}
+.blog-card-title {
+    width: 330px;
+    margin-top: 25px;
+}
+.blog-card-date {
+    color: #5f5b53;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 26px;
+    display: flex;
+    gap: 0 4px;
+    align-items: center;
+    border-bottom: 1px solid #e2dfda;
+    width: 160px;
+    padding-bottom: 12px;
+}
+.blog-card-date::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #ffb900;
+    display: inline-block;
+    border-radius: 50%;
+}
+/* .blog-card-date::after {
+    content: "";
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+    display: block;
+} */
+.blog-card-title a {
+    color: #171100;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+    /* width: 330px; */
+}
+.blog-card-btn {
+    padding: 12px 21px;
+    background-color: var(--primary-btn-color);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 185.714% */
+    display: inline-block;
+    border-radius: 25px;
+    margin-top: 12px;
+}
+.blog-card-btn:hover {
+    background-color: var(--second-btn-color);
+}
+.blog__pagination {
+    display: flex;
+    gap: 0 6px;
+    justify-content: center;
+    margin-top: 38px;
+}
+.blog__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+    padding: 0;
+    border: none;
+}
+.blog__dot--active {
+    background-color: var(--second-btn-color);
+}
