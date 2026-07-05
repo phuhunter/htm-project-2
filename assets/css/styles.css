@@ -43,10 +43,9 @@ a {
 /* -----------HEADER----------- */
 .header {
     background-color: #fffcf4;
-    /* padding-top: 36px; */
     display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
+    /* flex-direction: column;
+    min-height: 100dvh; */
 }
 .nav-bar {
     height: 94px;
@@ -67,7 +66,6 @@ a {
     font-size: 16px;
     line-height: 1.75;
     padding: 5px 21px;
-    /* background-color: red; */
 }
 .header .nav-bar li.active a {
     color: #171100;
@@ -93,27 +91,38 @@ a {
 .header .action {
     padding: 11px 4px;
     border-radius: 24.5px;
-    width: 144px;
+    min-width: 144px;
     height: 50px;
     margin-left: 70px;
 }
-.header .hero {
+
+/* ----------------- Làm Sticky menu -----------*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background: #fffcf4;
+}
+/* ----------------- hero-----------------  */
+.hero {
+    background: #fffcf4;
+    padding-bottom: 65px;
+    padding-top: 75px;
+}
+.hero .content {
     display: flex;
     justify-content: space-between;
-    flex: 1;
-    margin-bottom: 65px;
+    align-items: center;
 }
 .hero .img-block {
-    width: 40%;
+    width: 470px;
     position: relative;
-
-    /* background-color: red; */
+    aspect-ratio: 470 / 685;
 }
 .hero .img-block .feature-img {
     display: block;
-    max-height: calc(100vh - 94px);
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -153,6 +162,7 @@ a {
     font-weight: 600;
     line-height: 30px; /* 166.667% */
 }
+
 .hero .info {
     width: 40%;
     /* max-height: calc(100vh - 94px); */
