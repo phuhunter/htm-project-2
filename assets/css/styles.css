@@ -39,6 +39,13 @@ a {
     font-size: 18px;
     line-height: 30px;
 }
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
 
 /* -----------HEADER----------- */
 .header {
@@ -299,6 +306,7 @@ p.engage {
 }
 .course-item {
     flex: 1;
+    min-width: 0;
     border-radius: 12px;
     border: 1px solid #e2dfda;
     /* background: #fff;
@@ -331,6 +339,13 @@ p.engage {
     font-style: normal;
     font-weight: 600;
     line-height: 30px; /* 166.667% */
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    /* câu này để làm cho các chữ ko có dấu cách cũng phải xuống dòng*/
+    padding-right: 6px;
 }
 .course-star {
     color: #fea31b;
@@ -350,6 +365,11 @@ p.engage {
     font-weight: 400;
     line-height: 26px; /* 185.714% */
     margin-top: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: anywhere; /* câu này để làm cho các chữ ko có dấu cách cũng phải xuống dòng*/
 }
 .course-price {
     display: flex;
